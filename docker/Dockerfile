@@ -25,7 +25,8 @@ RUN install-php-extensions \
     simplexml \
     pdo \
     pdo_pgsql \
-    zip
+    zip \
+    grpc # if not installed, RR falls back to PHP implementation of GRPC
 
 ENV LC_ALL=C.UTF-8
 
